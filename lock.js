@@ -24,7 +24,7 @@
 
   async function open(password, quiet) {
     if (!window.crypto || !crypto.subtle) {
-      error.textContent = 'This page must be opened over https.';
+      error.textContent = 'Cette page doit être ouverte en https.';
       return;
     }
     button.disabled = true;
@@ -34,7 +34,7 @@
       vault.hidden = false;
       try { sessionStorage.setItem(STORAGE_KEY, password); } catch (e) { /* storage unavailable */ }
     } catch (e) {
-      if (!quiet) error.textContent = 'The Guardian does not know your touch.';
+      if (!quiet) error.textContent = 'Le Gardien ne reconnaît pas votre toucher.';
     } finally {
       button.disabled = false;
     }
