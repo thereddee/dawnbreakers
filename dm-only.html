@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>DM Only · The Dawnbreakers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="index.html">
+      <span class="sun" aria-hidden="true">☀</span>
+      <span>
+        <span class="brand-name">The Dawnbreakers</span>
+        <span class="brand-sub">A campaign in the Valelands</span>
+      </span>
+    </a>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Wiki pages">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="valelands.html">The Valelands</a></li>
+        <li><a href="order.html">The Order of the Dawn</a></li>
+        <li><a href="calendar.html">Calendar</a></li>
+        <li><a href="script.html">The Script of the Dawn</a></li>
+        <li><a href="party.html">The Party</a></li>
+        <li><a href="recaps.html">Session recaps</a></li>
+        <li><a href="house-rules.html">House rules</a></li>
+        <li><a href="dm-only.html" aria-current="page">DM Only 🔒</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>DM Only</h1>
+      <div id="lock" class="lock">
+        <div class="keyhole" aria-hidden="true">🗝</div>
+        <p><i>The door has three locks. You need only one key.</i></p>
+        <form id="lock-form" autocomplete="off">
+          <label for="lock-input">Password</label>
+          <input id="lock-input" type="text" inputmode="numeric" autocomplete="off" autofocus>
+          <button type="submit">Open</button>
+        </form>
+        <p id="lock-error" class="lock-error" role="alert"></p>
+      </div>
+      <div id="vault" hidden></div>
+
+    </main>
+  </div>
+  <footer>
+    Campaign wiki kept by Julien. Players may read everything that isn't locked. Sam, stop guessing the password.
+  </footer>
+  <script src="dm-only.data.js"></script>
+  <script src="lock.js"></script>
+</body>
+</html>
